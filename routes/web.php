@@ -4,8 +4,11 @@ use Gloudemans\Shoppingcart\Facades\Cart;
 
 // Route::view('/', 'landing-page');
 Route::get('/','LandingPageController@index')->name('landing-page');
+
 Route::get('/shop','ShopController@index')->name('shop.index');
 Route::get('/shop/{product}','ShopController@show')->name('shop.show');
+// Route::resource('shop', ShopController::class); // this route can handle all actions in controller
+
 // Route::view('/shop', 'shop');
 // Route::view('/cart', 'cart');
 

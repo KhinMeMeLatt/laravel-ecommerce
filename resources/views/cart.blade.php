@@ -89,13 +89,13 @@
                 <div class="cart-totals-right">
                     <div>
                         Subtotal <br>
-                        Tax <br>
+                        Tax (13%)<br>
                         <span class="cart-totals-total">Total</span>
                     </div>
                     <div class="cart-totals-subtotal">
-                        $7499.97 <br>
-                        $975.00 <br>
-                        <span class="cart-totals-total">$8474.97</span>
+                        {{ presentPrice(Cart::subtotal()) }} <br>
+                        {{ presentPrice(Cart::tax()) }} <br>
+                        <span class="cart-totals-total">{{ presentPrice(Cart::total()) }}</span>
                     </div>
                 </div>
             </div> <!-- end cart-totals -->
