@@ -183,6 +183,10 @@ h2 {
   color: #212121 !important;
   background: #e9e9e9;
 }
+.button-white:disabled {
+  background: #63cdb7;
+  cursor: not-allowed;
+}
 
 .button-primary {
   background: #3EBFA4;
@@ -648,6 +652,28 @@ h1.checkout-heading {
   font-weight: bold;
   font-size: 22px;
   line-height: 2.2;
+}
+
+/**
+* The CSS shown here will not be introduced in the Quickstart guide, but shows
+* how you can use CSS to style your Element's container.
+*/
+.StripeElement {
+  background-color: white;
+  padding: 16px 16px;
+  border: 1px solid #ccc;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+#card-errors {
+  color: #fa755a;
 }
 
 .thank-you-section {

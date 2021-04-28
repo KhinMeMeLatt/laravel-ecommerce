@@ -16,6 +16,11 @@
         color: $text-color !important;
         background: $white;
     }
+
+    &:disabled {
+        background: lighten($primary, 10%);
+        cursor: not-allowed;
+    }
 }
 
 .button-primary {
