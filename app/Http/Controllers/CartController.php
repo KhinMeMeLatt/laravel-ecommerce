@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Product;
+use App\Models\Product;
 use Gloudemans\Shoppingcart\Facades\Cart;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
@@ -48,7 +48,7 @@ class CartController extends Controller
         }
 
         Cart::add($request->id, $request->name, 1, $request->price)
-            ->associate('App\Product');
+            ->associate('App\Models\Product');
 
         return redirect()->route('cart.index')->with('success_message', 'Item was added to your cart!');
     }
@@ -132,7 +132,7 @@ class CartController extends Controller
 
         // instance is used for other cart
         Cart::instance('saveForLater')->add($item->id, $item->name, 1, $item->price)
-            ->associate('App\Product');
+            ->associate('App\Models\Product');
 
         return redirect()->route('cart.index')->with('success_message', 'Item has been Saved For Later!');
     }

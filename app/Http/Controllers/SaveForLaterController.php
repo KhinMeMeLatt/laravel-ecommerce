@@ -42,7 +42,7 @@ class SaveForLaterController extends Controller
 
         // instance is used for other cart
         Cart::instance('default')->add($item->id, $item->name, 1, $item->price)
-            ->associate('App\Product');
+            ->associate('App\Models\Product');
 
         return redirect()->route('cart.index')->with('success_message', 'Item has been moved to Cart!');
     }
