@@ -16,6 +16,8 @@
         </form>
     @endguest
     <li><a href="{{ route('cart.index') }}">Cart
-        <span class="cart-count"><span>{{ Cart::instance('default')->count() }}</span></span>
+        @if(Cart::instance('default')->count() > 0)
+            <span class="cart-count"><span>{{ Cart::instance('default')->count() }}</span></span>
+        @endif
     </a></li>
 </ul>
