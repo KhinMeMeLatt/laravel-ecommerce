@@ -347,12 +347,6 @@ header.with-background .top-nav .logo {
   font-weight: bold;
   font-size: 28px;
 }
-header.with-background .top-nav ul {
-  display: flex;
-  text-transform: uppercase;
-  justify-content: space-between;
-  width: 40%;
-}
 header.with-background .top-nav ul a {
   color: #e9e9e9;
 }
@@ -393,14 +387,19 @@ header .top-nav .logo {
   font-weight: bold;
   font-size: 28px;
   color: #e9e9e9;
+  margin-right: 58px;
 }
 header .top-nav ul {
   display: flex;
   text-transform: uppercase;
-  justify-content: space-between;
-  width: 40%;
   padding-top: 8px;
   font-weight: 400;
+}
+header .top-nav ul li {
+  margin-right: 38px;
+}
+header .top-nav ul li:last-child {
+  margin-right: 0;
 }
 header .top-nav ul a {
   color: #e9e9e9;
@@ -422,6 +421,13 @@ header .top-nav ul .cart-count span {
   padding-bottom: 50%;
   margin-left: 6px;
   margin-right: 6px;
+}
+header .top-nav-left {
+  display: flex;
+}
+header .top-nav-right {
+  display: flex;
+  align-items: center;
 }
 
 footer {
