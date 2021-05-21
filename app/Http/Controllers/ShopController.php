@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Pagination\Paginator;
 
 class ShopController extends Controller
 {
@@ -15,6 +16,8 @@ class ShopController extends Controller
      */
     public function index()
     {
+        Paginator::useBootstrap();
+
         $pagination = 9;
         $categories = Category::all();
 
@@ -22,7 +25,7 @@ class ShopController extends Controller
             $products = Product::with('categories')->whereHas('categories', function($query) {
                 $query->where('slug', request()->category);
             });
-            
+
             $categoryName = optional($categories->where('slug', request()->category)->first())->name;
         }else {
             $products = Product::where('featured', true);
