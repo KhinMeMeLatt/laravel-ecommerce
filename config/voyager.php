@@ -17,6 +17,8 @@ return [
         'redirect'                     => '/admin',
     ],
 
+    'adminPassword' => env('ADMIN_PASSWORD', 'password'),
+
     /*
     |--------------------------------------------------------------------------
     | Controllers config
