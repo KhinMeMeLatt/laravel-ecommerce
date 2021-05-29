@@ -28,3 +28,10 @@ Add MAIL_MAILER, MAIL_HOST, MAIL_PORT, MAIL_USERNAME, MAIL_PASSWORD and MAIL_ENC
 - [Laravel](https://laravel.com/docs/8.x)
 - [Stripe Documentation](https://stripe.com/docs/stripe-js)
 
+## Transactional Email
+Set Email Address and name in .env file.
+
+```
+MAIL_FROM_ADDRESS = YOUR_EMAIL_ADDRESS
+MAIL_FROM_NAME = YOUR_EMAIL_NAME
+```
