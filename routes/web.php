@@ -1,6 +1,8 @@
 <?php
 
 use Gloudemans\Shoppingcart\Facades\Cart;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 Route::get('/','LandingPageController@index')->name('landing-page');
 
@@ -41,3 +43,9 @@ Route::group(['prefix' => 'admin'], function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/mailable', function () {
+    $order = App\Models\Order::find(1);
+
+    return new App\Mail\OrderPlaced($order);
+});
