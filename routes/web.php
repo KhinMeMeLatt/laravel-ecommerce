@@ -1,9 +1,5 @@
 <?php
 
-use Gloudemans\Shoppingcart\Facades\Cart;
-use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Auth;
-
 Route::get('/','LandingPageController@index')->name('landing-page');
 
 Route::get('/shop','ShopController@index')->name('shop.index');

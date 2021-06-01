@@ -16,7 +16,7 @@
     @foreach($order->products as $product)
         Name: {{ $product->name }} <br>
         Price: {{ $product->price / 100, 2 }} <br>
-        Quantity: {{ $product->pivote->quantity }} <br>
+        Quantity: {{ $product->pivot->quantity }} <br>
     @endforeach
 
     You can get further details about your order by logging into our website.
@@ -27,6 +27,6 @@
 
     Thank you again for choosing us.
 
-    Regards,<br>
+    Regards, <br>
     {{ config('app.name') }}
 @endcomponent
