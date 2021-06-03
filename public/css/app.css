@@ -1084,3 +1084,18 @@ h1.checkout-heading {
 .thank-you-section h1 {
   margin-bottom: 10px;
 }
+
+.search-results-container {
+  min-height: 500px;
+  margin: 20px auto;
+}
+.search-results-container a {
+  color: darkblue;
+}
+.search-results-container a:hover {
+  text-decoration: underline;
+}
+
+.search-results-count {
+  margin-bottom: 20px;
+}

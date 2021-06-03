@@ -16,6 +16,7 @@
         "hardevine/shoppingcart": "^2.9",
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
+        "nicolaslopezj/searchable": "^1.13",
         "tcg/voyager": "^1.4"
     },
     "require-dev": {

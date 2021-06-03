@@ -19,15 +19,6 @@ Add MAIL_MAILER, MAIL_HOST, MAIL_PORT, MAIL_USERNAME, MAIL_PASSWORD and MAIL_ENC
 - [ hardevine/LaravelShoppingcart ](https://github.com/hardevine/LaravelShoppingcart) is used for shopping cart
 - Tax rate and format can be changed in config>cart.php.
 
-## Admin panel
-
-[Voyager](https://voyager.devdojo.com/) is used for admin panel.
-
-## Documentation
-
-- [Laravel](https://laravel.com/docs/8.x)
-- [Stripe Documentation](https://stripe.com/docs/stripe-js)
-
 ## Transactional Email
 Set Email Address and name in .env file.
 
@@ -35,3 +26,10 @@ Set Email Address and name in .env file.
 MAIL_FROM_ADDRESS = YOUR_EMAIL_ADDRESS
 MAIL_FROM_NAME = YOUR_EMAIL_NAME
 ```
+
+## Build with
+- [Laravel](https://laravel.com/docs/8.x) 
+- Shopping Cart - [hardevine/LaravelShoppingcart](https://github.com/hardevine/LaravelShoppingcart)
+- Admin Panel - [Voyager](https://voyager.devdojo.com/)
+- Payment - [Stripe Documentation](https://stripe.com/docs/stripe-js)
+- 
