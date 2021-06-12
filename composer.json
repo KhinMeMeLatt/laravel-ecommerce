@@ -9,12 +9,14 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
+        "algolia/algoliasearch-client-php": "^3.0",
         "cartalyst/stripe-laravel": "^13.1",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.3",
         "hardevine/shoppingcart": "^2.9",
         "laravel/framework": "^8.12",
+        "laravel/scout": "^9.1",
         "laravel/tinker": "^2.5",
         "nicolaslopezj/searchable": "^1.13",
         "tcg/voyager": "^1.4"

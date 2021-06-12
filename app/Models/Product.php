@@ -5,12 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Nicolaslopezj\Searchable\SearchableTrait;
+use Laravel\Scout\Searchable;
 
 class Product extends Model
 {
     use HasFactory;
 
-    use SearchableTrait;
+    use SearchableTrait, Searchable;
 
     /**
      * Searchable rules.
