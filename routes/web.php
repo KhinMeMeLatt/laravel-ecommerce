@@ -42,6 +42,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/search', 'ShopController@search')->name('search');
 
+Route::get('/search-algolia', 'ShopController@searchAlgolia')->name('search-algolia');
+
 Route::get('/mailable', function () {
     $order = App\Models\Order::find(1);
 
