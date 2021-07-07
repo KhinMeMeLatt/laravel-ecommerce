@@ -16,7 +16,7 @@
         "guzzlehttp/guzzle": "^7.3",
         "hardevine/shoppingcart": "^2.9",
         "laravel/framework": "^8.12",
-        "laravel/scout": "^9.1",
+        "laravel/scout": "^9.2",
         "laravel/tinker": "^2.5",
         "nicolaslopezj/searchable": "^1.13",
         "tcg/voyager": "^1.4"

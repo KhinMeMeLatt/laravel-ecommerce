@@ -1108,24 +1108,24 @@ h1.checkout-heading {
   grid-gap: 20px;
 }
 
-.ais-hits--item .instantsearch-result {
+.ais-StateResults .instantsearch-result {
   display: flex;
   align-items: center;
 }
-.ais-hits--item .instantsearch-result img {
+.ais-StateResults .instantsearch-result img {
   margin-right: 40px;
 }
-.ais-hits--item .result-details {
+.ais-StateResults .result-details {
   color: #919191;
 }
-.ais-hits--item .result-price {
+.ais-StateResults .result-price {
   margin-top: 6px;
   font-weight: 500;
 }
-.ais-hits--item .algolia-thumb-result {
+.ais-StateResults .algolia-thumb-result {
   max-height: 50px;
 }
-.ais-hits--item hr {
+.ais-StateResults hr {
   border: 0.5px solid #CDCDCD;
 }
 

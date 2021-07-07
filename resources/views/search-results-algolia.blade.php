@@ -33,7 +33,8 @@
         @endif
     </div>
 
-    <div class="container">
+    <algolia-vue-search></algolia-vue-search>
+    {{-- <div class="container">
         <div class="search-results-container-algolia">
             <div>
                 <h2>Search</h2>
@@ -59,7 +60,7 @@
             </div>
 
         </div> <!-- end search-container -->
-    </div>
+    </div> --}}
 
 @endsection
 
@@ -69,5 +70,6 @@
     <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
     <script src="{{ asset('js/algolia.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.0"></script>
-    <script src="{{ asset('js/algolia-instantsearch.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    {{-- <script src="{{ asset('js/algolia-instantsearch.js') }}"></script> --}}
 @endsection
