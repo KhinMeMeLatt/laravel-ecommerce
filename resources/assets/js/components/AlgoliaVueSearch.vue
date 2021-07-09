@@ -17,7 +17,6 @@
       <div>
         <ais-state-results>
           <template slot-scope="{ results: { hits } }">
-            <!-- {{ hits[0] }} -->
             <div v-for="hit in hits" :key="hit.id">
             <a :href="`/shop/${hit.slug}`">
               <div class="instantsearch-result">
@@ -60,8 +59,8 @@ export default {
   data() {
     return {
       searchClient: algoliasearch(
-        "IB2S5S9Z7M",
-        "aa1675264dfc24e916ad9293b3f84ba8"
+        process.env.ALGOLIA_APP_ID,
+        process.env.ALGOLIA_API_KEY 
       ),
     };
   },
