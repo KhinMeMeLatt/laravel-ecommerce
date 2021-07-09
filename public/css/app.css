@@ -1146,3 +1146,51 @@ h1.checkout-heading {
   margin-left: auto;
   margin-right: 57px;
 }
+
+.auth-pages {
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+  min-height: 60vh;
+}
+.auth-pages input {
+  border: 1px solid #919191;
+  padding: 16px 10px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.auth-pages input[type=checkbox] {
+  width: auto;
+}
+.auth-pages .login-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.auth-pages .auth-button {
+  background: #212121;
+  color: #e9e9e9;
+  border-radius: 5px;
+  padding: 12px 50px;
+}
+.auth-pages .auth-button:hover {
+  background: #3b3b3b;
+}
+.auth-pages .auth-button-hollow {
+  background: white;
+  color: #212121;
+  border-radius: 5px;
+  border: 1px solid #212121;
+  padding: 12px 50px;
+}
+.auth-pages .auth-button-hollow:hover {
+  background: #212121;
+  color: #e9e9e9;
+}
+.auth-pages .auth-right {
+  border-left: 1px solid #CDCDCD;
+  padding-left: 100px;
+}
