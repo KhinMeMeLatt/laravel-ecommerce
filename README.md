@@ -27,6 +27,16 @@ MAIL_FROM_ADDRESS = YOUR_EMAIL_ADDRESS
 MAIL_FROM_NAME = YOUR_EMAIL_NAME
 ```
 
+## Algolia (Searching API)
+
+Algolia Vue Instant Search and Autocomplete are used in this project. Please setup algolia attributes in env file as below. The attributes' values can be get from [ Algolia ](https://www.algolia.com/).
+
+```
+MIX_ALGOLIA_APP_ID=YOUR_ALGOLIA_APP_ID
+MIX_ALGOLIA_SECRET=YOUR_ALGOLIA_SECRET
+MIX_ALGOLIA_API_KEY=YOUR_ALGOLIA_API_KEY
+```
+
 ## Build with
 - [Laravel](https://laravel.com/docs/8.x) 
 - Shopping Cart - [hardevine/LaravelShoppingcart](https://github.com/hardevine/LaravelShoppingcart)
