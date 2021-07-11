@@ -27,6 +27,7 @@
     },
     "dependencies": {
         "@algolia/autocomplete-js": "^1.2.0",
+        "@algolia/autocomplete-theme-classic": "^1.2.1",
         "bootstrap-sass": "^3.4.1",
         "jquery": "^3.6.0",
         "vue": "^2.6.12",
