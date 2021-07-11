@@ -936,11 +936,13 @@ footer {
 .cart-section .have-code {
   display: block;
   margin: 14px 0;
+  text-align: right;
 }
 .cart-section .have-code-container {
   border: 1px solid #919191;
   padding: 16px;
   width: 50%;
+  margin-left: auto;
 }
 .cart-section .have-code-container form {
   display: flex;
@@ -973,7 +975,7 @@ footer {
 .cart-section .cart-totals .cart-totals-right {
   display: flex;
   justify-content: space-between;
-  width: 25%;
+  width: 45%;
   text-align: right;
 }
 .cart-section .cart-totals .cart-totals-total {

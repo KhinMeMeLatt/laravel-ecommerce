@@ -70,14 +70,17 @@
                     @endforeach
                 </div> <!-- end cart-table -->
 
-                <a href="#" class="have-code">Have a Code?</a>
+                @if (! session()->has('coupon'))
+                  <a href="#" class="have-code">Have a Code?</a>
 
-                <div class="have-code-container">
-                    <form action="#">
-                        <input type="text">
-                        <button type="submit" class="button button-plain">Apply</button>
+                  <div class="have-code-container">
+                    <form action="{{ route('coupon.store') }}" method="POST">
+                      {{ csrf_field() }}
+                      <input type="text" name="coupon_code" id="coupon_code">
+                      <button type="submit" class="button button-plain">Apply</button>
                     </form>
-                </div> <!-- end have-code-container -->
+                  </div> <!-- end have-code-container -->
+                @endif
 
                 <div class="cart-totals">
                     <div class="cart-totals-left">
@@ -87,13 +90,29 @@
                     <div class="cart-totals-right">
                         <div>
                             Subtotal <br>
+                            @if (session()->has('coupon'))
+                                Code ({{ session()->get('coupon')['name'] }})
+                                <form action="{{ route('coupon.destroy') }}" method="POST" style="display: inline">
+                                    {{ csrf_field() }}
+                                    {{ method_field('delete') }}
+                                    <button type="submit" style="font-size: 14px">Remove</button>
+                                </form>
+                                <br>
+                                <hr>
+                                New Subtotal <br>
+                            @endif
                             Tax (13%)<br>
                             <span class="cart-totals-total">Total</span>
                         </div>
                         <div class="cart-totals-subtotal">
                             {{ presentPrice(Cart::subtotal()) }} <br>
-                            {{ presentPrice(Cart::tax()) }} <br>
-                            <span class="cart-totals-total">{{ presentPrice(Cart::total()) }}</span>
+                            @if (session()->has('coupon'))
+                                -{{ presentPrice($discount) }} <br>
+                                <hr>
+                                {{ presentPrice($newSubtotal) }} <br>
+                            @endif
+                            {{ presentPrice($newTax) }} <br>
+                            <span class="cart-totals-total">{{ presentPrice($newTotal) }}</span>
                         </div>
                     </div>
                 </div> <!-- end cart-totals -->
@@ -136,15 +155,6 @@
                                         <button type="submit" class="cart-options">Move to Cart</button>
                                     </form>
                                 </div>
-                                {{-- <div>
-                                    <select class="quantity">
-                                        <option selected="">1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
-                                </div> --}}
                                 <div>{{ $item->model->presentPrice() }}</div>
                             </div>
                         </div> <!-- end cart-table-row -->

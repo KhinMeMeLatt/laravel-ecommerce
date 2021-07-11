@@ -69,12 +69,14 @@
     .have-code {
       display: block;
       margin: 14px 0;
+      text-align: right;
     }
 
     .have-code-container {
       border: 1px solid $text-color-light;
       padding: 16px;
       width: 50%;
+      margin-left: auto;
 
       form {
         display: flex;
@@ -113,7 +115,7 @@
         .cart-totals-right {
             display: flex;
             justify-content: space-between;
-            width: 25%;
+            width: 45%;
             text-align: right;
         }
 

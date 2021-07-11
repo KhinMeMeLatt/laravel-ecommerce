@@ -24,7 +24,7 @@ class CouponsController extends Controller
 
         dispatch_now(new UpdateCoupon($coupon));
 
-        return redirect()->route('checkout.index')->with('success_message', 'Coupon has been applied!');
+        return redirect()->route('cart.index')->with('success_message', 'Coupon has been applied!');
     }
 
     /**
@@ -36,6 +36,6 @@ class CouponsController extends Controller
     {
         session()->forget('coupon');
 
-        return redirect()->route('checkout.index')->with('success_message', 'Coupon has been removed.');
+        return redirect()->route('cart.index')->with('success_message', 'Coupon has been removed.');
     }
 }

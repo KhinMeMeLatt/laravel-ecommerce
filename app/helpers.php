@@ -14,3 +14,24 @@ function productImage($path)
 {
     return $path && file_exists('storage/'.$path)  ? asset('storage/'.$path) : asset('img/not-found.jpg');
 }
+
+function getNumbers() 
+{
+    $tax = config('cart.tax') / 100; // tax value is come from cart package (cart.php)
+    $discount = session()->get('coupon')['discount'] ?? 0;
+    $code = session()->get('coupon')['name'] ?? null;
+    $newSubtotal = Cart::subtotal() - $discount;
+    if($newSubtotal < 0) {
+        $newSubtotal = 0;
+    }
+    $newTax = $newSubtotal * $tax;
+    $newTotal = $newSubtotal + $newTax;
+    
+    return collect([
+        'tax' => $tax,
+        'discount' => $discount, 
+        'newSubtotal' => $newSubtotal,
+        'newTax' => $newTax,
+        'newTotal' => $newTotal,
+    ]);
+}
