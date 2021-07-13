@@ -42,4 +42,4 @@ MIX_ALGOLIA_API_KEY=YOUR_ALGOLIA_API_KEY
 - Shopping Cart - [hardevine/LaravelShoppingcart](https://github.com/hardevine/LaravelShoppingcart)
 - Admin Panel - [Voyager](https://voyager.devdojo.com/)
 - Payment - [Stripe Documentation](https://stripe.com/docs/stripe-js)
-- 
+- Search - [Algolia](https://www.algolia.com/)
