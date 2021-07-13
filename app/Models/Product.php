@@ -13,6 +13,8 @@ class Product extends Model
 
     use SearchableTrait, Searchable;
 
+    protected $fillable = ['quantity'];
+
     /**
      * Searchable rules.
      *

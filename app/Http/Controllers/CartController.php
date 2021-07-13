@@ -98,6 +98,12 @@ class CartController extends Controller
             session()->flash('errors', collect(['Quantity must be between 1 and 5.']));
             return response()->json(['success' => false], 400); //400 is an error code
         }
+
+        if ($request->quantity > $request->productQuantity) {
+            session()->flash('errors', collect(['We currently do not have enouogh items in stock.']));
+            return response()->json(['success' => false], 400); //400 is an error code
+        }
+
         Cart::update($id, $request->quantity);
         session()->flash('success_message', 'Quantity was updated successfully!');
         return response()->json(['success' => true]);
