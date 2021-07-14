@@ -30,6 +30,7 @@
         "@algolia/autocomplete-theme-classic": "^1.2.1",
         "bootstrap-sass": "^3.4.1",
         "jquery": "^3.6.0",
+        "sanitize-html": "^2.4.0",
         "vue": "^2.6.12",
         "vue-instantsearch": "^3.7.0"
     }
