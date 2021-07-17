@@ -43,3 +43,4 @@ MIX_ALGOLIA_API_KEY=YOUR_ALGOLIA_API_KEY
 - Admin Panel - [Voyager](https://voyager.devdojo.com/)
 - Payment - [Stripe Documentation](https://stripe.com/docs/stripe-js)
 - Search - [Algolia](https://www.algolia.com/)
+- Browser Testing - [Laravel Dusk](https://laravel.com/docs/8.x/dusk)
