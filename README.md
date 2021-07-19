@@ -2,7 +2,7 @@
 The original repository can be found [here](https://github.com/drehimself/laravel-ecommerce-example). You can watch amazing tutorial [here](https://www.youtube.com/watch?v=o5PWIuDTgxg&list=PLEhEHUEU3x5oPTli631ZX9cxl6cU_sDaR).
 
 ## Screenshot
-[laravel_ecommerce](https://github.com/KhinMeMeLatt/laravel-ecommerce/blob/main/screenshot.JPG)
+![laravel_ecommerce](https://github.com/KhinMeMeLatt/laravel-ecommerce/blob/main/screenshot.JPG)
 
 ## Installation
 
