@@ -1,5 +1,8 @@
 ## Laravel Ecommerce
-The original repository can be found [here](https://github.com/drehimself/laravel-ecommerce-example).
+The original repository can be found [here](https://github.com/drehimself/laravel-ecommerce-example). You can watch amazing tutorial [here](https://www.youtube.com/watch?v=o5PWIuDTgxg&list=PLEhEHUEU3x5oPTli631ZX9cxl6cU_sDaR).
+
+## Screenshot
+[laravel_ecommerce](https://github.com/KhinMeMeLatt/laravel-ecommerce/blob/main/screenshot.JPG)
 
 ## Installation
 
@@ -9,6 +12,16 @@ Add stripe key in .env file (You can get the below keys in [strip](https://strip
 ```
 STRIPE_KEY="YOUR_STRIPE_KEY"
 STRIPE_SECRET="YOUR_STRIPE_SECRET"
+```
+
+### Braintree (Paypal payment)
+Configure the following environment variable in .env file. (You can get the below keys in [Braintree](https://www.braintreepayments.com/au))
+
+```
+BT_ENVIRONMENT=sandbox
+BT_MERCHANT_ID=YOUR_BT_MERCHANT_ID
+BT_PUBLIC_KEY=YOUR_BT_PUBLIC_KEY
+BT_PRIVATE_KEY=YOUR_BT_PRIVATE_KEY
 ```
 
 ### Mailtrap (For Forget Email)
@@ -41,6 +54,6 @@ MIX_ALGOLIA_API_KEY=YOUR_ALGOLIA_API_KEY
 - [Laravel](https://laravel.com/docs/8.x) 
 - Shopping Cart - [hardevine/LaravelShoppingcart](https://github.com/hardevine/LaravelShoppingcart)
 - Admin Panel - [Voyager](https://voyager.devdojo.com/)
-- Payment - [Stripe Documentation](https://stripe.com/docs/stripe-js)
+- Payment - [Stripe Documentation](https://stripe.com/docs/stripe-js), [Braintree](https://www.braintreepayments.com/au)
 - Search - [Algolia](https://www.algolia.com/)
 - Browser Testing - [Laravel Dusk](https://laravel.com/docs/8.x/dusk)
