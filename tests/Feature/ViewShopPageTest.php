@@ -146,8 +146,8 @@ class ViewShopPageTest extends TestCase
     /** @test */
     public function category_page_shows_correct_product()
     {
-        $laptop1 = Product::factory()->create(['name' => 'Laptop 1']);
-        $laptop2 = Product::factory()->create(['name' => 'Laptop 2']);
+        $laptop1 = Product::factory()->create(['name' => 'Laptop 1', 'slug' => 'laptop-1']);
+        $laptop2 = Product::factory()->create(['name' => 'Laptop 2', 'slug' => 'laptop-2']);
 
         $laptopsCategory = Category::create([
             'name' => 'laptops',
