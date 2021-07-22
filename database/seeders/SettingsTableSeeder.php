@@ -131,6 +131,18 @@ class SettingsTableSeeder extends Seeder
                 'group'        => 'Admin',
             ])->save();
         }
+
+        $setting = $this->findSetting('site.stock_threshold');
+        if (!$setting->exists) {
+            $setting->fill([
+                'display_name' => 'stock_threshold',
+                'value'        => '5',
+                'details'      => '',
+                'type'         => 'number',
+                'order'        => 1,
+                'group'        => 'Site',
+            ])->save();
+        }
     }
 
     /**
