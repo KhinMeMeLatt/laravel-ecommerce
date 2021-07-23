@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,yBAAyB,CAAC;EACtB,UAAU,EAAE,KAAK;EACjB,MAAM,EAAE,SAAS;CASpB;;AAXD,AAII,yBAJqB,CAIrB,CAAC,CAAC;EACE,KAAK,EAAE,QAAQ;CAKlB;;AAVL,AAOQ,yBAPiB,CAIrB,CAAC,AAGI,MAAM,CAAC;EACJ,eAAe,EAAE,SAAS;CAC7B;;AAIT,AAAA,qBAAqB,CAAC;EAClB,aAAa,EAAE,IAAI;CACtB",
+    "sources": [
+        "search-results.scss"
+    ],
+    "names": [],
+    "file": "search-results.css"
+}
